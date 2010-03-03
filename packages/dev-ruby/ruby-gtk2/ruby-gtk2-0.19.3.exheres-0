@@ -1,0 +1,33 @@
+# Copyright 2010 Jonathan Dahan <jedahan@gmail.com>
+# Distributed under the terms of the GNU General Public License v2
+
+require sourceforge [ project=ruby-gnome2 suffix=tar.gz ]
+SUMMARY="Ruby language bindings for GTK+ 2.0"
+
+LICENCES="Ruby"
+SLOT="0"
+PLATFORMS="~amd64"
+
+BUGS_TO="jedahan@gmail.com"
+
+DEPENDENCIES="
+    build:
+        dev-util/pkg-config
+    build+run:
+        dev-lang/ruby[>=1.8]
+        dev-libs/glib
+        dev-ruby/rcairo
+        x11-libs/gtk+[>=2]
+        x11-libs/pango
+"
+
+src_configure() {
+    edo ruby extconf.rb
+}
+
+src_install() {
+    default
+
+    edo rm -rf "${IMAGE}"/usr/lib*/pkgconfig
+}
+

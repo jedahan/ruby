@@ -1,0 +1,13 @@
+# Copyright 2010 Jonathan Dahan <jedahan@gmail.com>
+# Distributed under the terms of the GNU General Public License v2
+
+require gem
+
+SUMMARY="POSIX tarchive management from Ruby programs."
+
+LICENCES="GPL-2 Ruby"
+SLOT="0"
+PLATFORMS="~amd64"
+
+BUGS_TO="jedahan@gmail.com"
+

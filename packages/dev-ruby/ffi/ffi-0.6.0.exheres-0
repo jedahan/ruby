@@ -1,0 +1,16 @@
+# Copyright 2010 Jonathan Dahan <jedahan@gmail.com>
+# Distributed under the terms of the GNU General Public License v2
+
+require gem
+
+SUMMARY="Programatically load dynamic libraries and call them from Ruby"
+DESCRIPTION= "Ruby-FFI is a ruby extension for programmatically loading dynamic
+libraries, binding functions within them, and calling those functions from Ruby
+code. Moreover, a Ruby-FFI extension works without changes on Ruby and JRuby.
+"
+
+LICENCES="GPL-2"
+SLOT="0"
+PLATFORMS="~amd64"
+BUGS_TO="jedahan@gmail.com"
+

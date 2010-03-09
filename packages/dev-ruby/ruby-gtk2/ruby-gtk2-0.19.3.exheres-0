@@ -14,10 +14,10 @@ DEPENDENCIES="
     build:
         dev-util/pkg-config
     build+run:
-        dev-lang/ruby[>=1.8]
-        dev-libs/glib
+        dev-lang/ruby:=[>=1.8]
+        dev-libs/glib:2
         dev-ruby/rcairo
-        x11-libs/gtk+[>=2]
+        x11-libs/gtk+:2[>=2]
         x11-libs/pango
 "
 

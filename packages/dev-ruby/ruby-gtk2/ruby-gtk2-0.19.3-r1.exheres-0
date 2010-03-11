@@ -25,9 +25,3 @@ src_configure() {
     edo ruby extconf.rb
 }
 
-src_install() {
-    default
-
-    edo rm -rf "${IMAGE}"/usr/lib*/pkgconfig
-}
-
